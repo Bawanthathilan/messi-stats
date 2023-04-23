@@ -36,8 +36,8 @@ const Home: NextPage = () => {
       <header className="relative w-full max-h-[40rem] h-screen" ref={ref}>
         <div className="relative flex flex-col h-full z-10">
           <Navbar />
-          <div className="flex-1 flex flex-col justify-center items-center">
-            <h1 className="text-white font-bold text-6xl">
+          <div className="flex-1 flex flex-col justify-center items-center text-center">
+            <h1 className="text-white font-bold text-2xl sm:text-2xl  md:text-6xl">
             Lionel Andreas Messi
             </h1>
             <h1 className="text-white mt-3 font-bold text-5xl">
@@ -60,10 +60,10 @@ const Home: NextPage = () => {
       </header>
 
       <main className="max-w-[70%] w-[70%] mx-auto my-8 z-50">
-        <h1 className="text-white font-bold text-6xl my-8">
+        <h1 className="text-white font-bold text-2xl sm:text-2xl md:text-6xl my-8">
           ALL TIME STATS
         </h1>
-        <div className="grid grid-cols-3 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3  gap-x-8 gap-y-16">
           <FeatureCard feature="GAMES" desc={messiStats[0]} />
           <FeatureCard feature="GOALS" desc={messiStats[1]} />
           <FeatureCard feature="ASSISTS" desc={messiStats[2]} />
